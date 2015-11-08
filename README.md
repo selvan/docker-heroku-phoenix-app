@@ -57,15 +57,16 @@
 ## Open application URL in browser
     heroku open
 
-## Connect to postgresql command line
+## Miscellaneous heroku commands
+### Connect to postgresql command line
     heroku pg:psql DATABASE
     
 - Note: Run above command as it is, without replacing DATABASE with anything 
 
-## Reset database
+### Reset database
     heroku pg:reset DATABASE_URL
     
 - Note: Run above command as it is, without replacing DATABASE_URL with anything
 
-## Heroku logs
+### Heroku logs
     heroku logs -t --app salty-mesa-7188
