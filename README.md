@@ -58,7 +58,7 @@
     heroku open
 
 ## Miscellaneous heroku commands
-### Connect to postgresql command line
+### Connect to postgresql cli
     heroku pg:psql DATABASE
     
 - Note: Run above command as it is, without replacing DATABASE with anything 
