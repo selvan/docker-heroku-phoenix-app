@@ -1,6 +1,6 @@
 {
-  "name": "chatapp",
-  "description": "Chat app",
+  "name": "phoenixapp",
+  "description": "A sample phoenix app",
   "image": "joshwlewis/docker-heroku-phoenix:latest",
   "addons": [
     "heroku-postgresql"

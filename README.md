@@ -9,7 +9,10 @@
     heroku plugins:install heroku-docker
     
 ## Copy app.json and Procfile
-    Copy app.json and Procfile from this repository to your phoenix application root folder 
+    Copy app.json and Procfile from this repository to your phoenix application root folder
+
+## Change app name & description
+    Edit app.json to change name & description 
 
 ## Create docker related files (Dockerfile and docker-compose.yml) 
     heroku docker:init
