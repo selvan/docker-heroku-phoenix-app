@@ -54,6 +54,9 @@
     
 - Executing 'heroku docker:release' command for very first time will take some time, subsequent runs will be much quicker.
 
+## Creating database
+    No need to run "mix ecto.create" with heroku as we just use postgresql database in heroku, rather than creating it.
+
 ## Running Ecto migrations
     heroku run "cd /app/user;MIX_ENV=prod NODE_ENV=production BRUNCH_ENV=production mix ecto.migrate"
 
