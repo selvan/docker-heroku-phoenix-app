@@ -1,4 +1,4 @@
-# Deploying phoenix app to heroku
+# Deploying phoenix app to heroku as docker container
 
 ## Pre-requisites
 
@@ -9,7 +9,8 @@
     heroku plugins:install heroku-docker
     
 ## Copy app.json and Procfile
-    Copy app.json and Procfile from this repository to your phoenix application root folder
+    Copy app.json and Procfile from this repository to your 
+    phoenix application root folder
 
 ## Change app name & description
     Edit app.json to change name & description 
@@ -58,7 +59,8 @@
 - Executing 'heroku docker:release' command for very first time will take some time, subsequent runs will be much quicker.
 
 ## Creating database
-    No need to run "mix ecto.create" with heroku as we just use postgresql database in heroku, rather than creating it.
+    No need to run "mix ecto.create" with heroku as we just use 
+    postgresql database in heroku, rather than creating it.
 
 ## Running Ecto migrations
     heroku run "cd /app/user;MIX_ENV=prod NODE_ENV=production BRUNCH_ENV=production mix ecto.migrate"
@@ -78,4 +80,9 @@
 - Note: Run above command as it is, without replacing DATABASE_URL with anything
 
 ### Heroku logs
-    heroku logs -t --app salty-mesa-7188
+    heroku logs -t --app <<app_name>>
+
+## Credit
+    Based on Docker image & instructions found at
+    https://hub.docker.com/r/joshwlewis/docker-heroku-phoenix/    
+
